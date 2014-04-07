@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Apr 04 2014 14:02:50 GMT+0000 (UTC) -->
+<html data-wf-site="5329128b07610bd9290000e3">
+<head>
+  <meta charset="utf-8">
+  <title>Belmar - Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/belmar.webflow.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAngdVX9wGXUcovZMBUigPcFKYBmVdshPM&sensor=true"></script>
+  <script>
+    function initialize() {
+      // Create an array of styles.
+      var styles = [
+        {
+          stylers: [
+            { hue: "#00ffe6" },
+            { saturation: -20 }
+          ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+      ];
+      // Create a new StyledMapType object, passing it the array of styles,
+      // as well as the name to be displayed on the map type control.
+      var styledMap = new google.maps.StyledMapType(styles,
+        {name: "Styled Map"});
+      // Create a map object, and include the MapTypeId to add
+      // to the map type control.
+      var myLatlng = new google.maps.LatLng(20.6049173, -105.23407709999998);
+      var mapOptions = {
+        zoom: 17,
+        scrollwheel: false,
+        center: new google.maps.LatLng(20.6049173, -105.23407709999998),
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        },
+        panControl: true,
+        panControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_RIGHT
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.BOTTOM_LEFT
+        },
+        scaleControl: true,
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_LEFT
+        }
+      };
+      var map = new google.maps.Map(document.getElementById('map_canvas_property'),
+        mapOptions);
+      //Associate the styled map with the MapTypeId and set it to display.
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        //icon: 'http://www.timothyrealestategroup.com/wp-content/themes/TREG/img/pin.png',
+        title: 'Hotel Belmar'
+    });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <style>
+    .gmnoprint img {
+        max-width: none; 
+    }
+  </style>
+</head>
+<body>
+  <header class="head">
+    <div class="w-container">
+      <ul class="w-clearfix social">
+        <li class="social-item">
+          <img src="images/tripadvisor.png" height="36" alt="5329248010570dd72900010c_tripadvisor.png">
+        </li>
+        <li class="social-item">
+          <img src="images/pinterest.png" height="36" alt="5329247010570dd72900010b_pinterest.png">
+        </li>
+        <li class="social-item">
+          <img src="images/twitter.png" height="36" alt="5329245910570dd72900010a_twitter.png">
+        </li>
+        <li class="social-item">
+          <img src="images/facebook.png" height="36" alt="532924432a33c3c8470001f2_facebook.png">
+        </li>
+        <li class="social-item">
+          <img src="images/youtube.png" height="36" alt="532924292a33c3c8470001ed_youtube.png">
+        </li>
+        <li class="social-item">
+          <img src="images/foursquare.png" height="36" alt="532923ca2a33c3c8470001ea_foursquare.png">
+        </li>
+      </ul>
+      <ul class="w-clearfix secondary-nav">
+        <li class="sec-nav-item"><a class="sec-nav-link" href="#">Text Link</a>
+        </li>
+        <li class="sec-nav-item"><a class="sec-nav-link" href="#">Text Link</a>
+        </li>
+        <li class="sec-nav-item"><a class="sec-nav-link" href="#">Text Link</a>
+        </li>
+      </ul>
+      <div class="w-nav navbar" data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-out-expo" data-doc-height="1">
+        <div class="w-container main-navigation">
+          <nav class="w-nav-menu menu-mobile-devices" role="navigation"><a class="w-nav-link nav-item" href="#">INICIO</a><a class="w-nav-link nav-item" href="#">EL HOTEL</a><a class="w-nav-link nav-item" href="#">HABITACIONES</a><a class="w-nav-link nav-item" href="#">UBICACIóN</a><a class="w-nav-link nav-item"
+            href="#">RESERVACIONES</a><a class="w-nav-link nav-item" href="#">QUE HACER</a><a class="w-nav-link nav-item" href="#">ContactO</a>
+          </nav>
+          <div class="w-nav-button w-clearfix menu-icon-pressed">
+            <div class="w-icon-nav-menu menu-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="logo"></div>
+    </div>
+  </header>
+  <div class="primary-container">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-10">
+          <ul class="blog-listing">
+            <li class="w-clearfix blog-item">
+              <img class="blog-list-img" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+              <h2 class="blog-list-title">Lorem Ipsum <span class="blog-date">Posted on 20/20/20</span></h2>
+              <p class="blog-list-parragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="link blog-list-link" href="#">Text Link</a>
+            </li>
+            <li class="w-clearfix blog-item">
+              <img class="blog-list-img" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+              <h2 class="blog-list-title">Lorem Ipsum <span class="blog-date">Posted on 20/20/20</span></h2>
+              <p class="blog-list-parragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="link blog-list-link" href="#">Text Link</a>
+            </li>
+            <li class="w-clearfix blog-item">
+              <img class="blog-list-img" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+              <h2 class="blog-list-title">Lorem Ipsum <span class="blog-date">Posted on 20/20/20</span></h2>
+              <p class="blog-list-parragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="link blog-list-link" href="#">Text Link</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-col w-col-2">
+          <aside>
+            <h4>Categories</h4>
+          </aside>
+          <ul class="categories">
+            <li><a class="link" href="#">Text Link</a>
+            </li>
+            <li><a class="link" href="#">Text Link</a>
+            </li>
+            <li><a class="link" href="#">Text Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul class="social-foot">
+        <li class="social-item-foot">
+          <img src="images/foursquare_w.png" alt="532a4169f3a4b2cc59000024_foursquare_w.png">
+        </li>
+        <li class="social-item-foot">
+          <img src="images/youtube_w.png" alt="532a4183f3a4b2cc59000026_youtube_w.png">
+        </li>
+        <li class="social-item-foot">
+          <img src="images/facebook_w.png" alt="532a41b5f3a4b2cc59000028_facebook_w.png">
+        </li>
+        <li class="social-item-foot">
+          <img src="images/twitter_w.png" alt="532a41d387abcfcb5900002e_twitter_w.png">
+        </li>
+        <li class="social-item-foot">
+          <img src="images/pinterest_w.png" alt="532a41e587abcfcb59000030_pinterest_w.png">
+        </li>
+        <li class="social-item-foot">
+          <img src="images/tripadvisor_w.png" alt="532a41fbf3a4b2cc59000029_tripadvisor_w.png">
+        </li>
+      </ul>
+      <p class="footer-info">Insurgentes 161, Col. E. Zapata Puerto Vallarta Jalisco CP. 48380MexicReservaciones
+        <br>Tel/Fax: +52 (32) 222 05 72 // Tel: +52 (322) 223 18 72 01 800 5810 483 (Mex).</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <script>
+    //Header Scroll top / down
+    $(function(){
+          var lastScroll = 0;
+          $(window).scroll(function(event){
+              var st = $(this).scrollTop();
+              if (st > lastScroll){
+                    $( '.social' ).animate({
+                        height: "0px",
+                        opacity: 0
+                    }, 500 );
+                    $('.social').css('display','none');
+                    $('.logo').animate({
+                        height: "64px"
+                    }, 500);
+                    $('.reservation-engine').animate({
+                        top: "45px"
+                    }, 500);
+                    $('.head').addClass('shadow');
+              }
+              else {
+                    $( '.social' ).animate({
+                        height: "64px",
+                        opacity: 1
+                    }, 500 );
+                    $('.social').css('display','block');
+                    $('.logo').animate({
+                        height: "135px"
+                    }, 500);
+                    $('.reservation-engine').animate({
+                        top: "110px"
+                    }, 500);
+              }
+              if (lastScroll <= '100'){ $('.head').removeClass('shadow'); }
+              console.log(lastScroll);
+              lastScroll = st;
+          });
+        });
+        $( document ).ready(function() { 
+            $( ".reservation-lin" ).click(); 
+        });
+        $( ".reservation-lin" ).click(function() {
+            $('.reservation').toggle("slow");
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #be8e51;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #be8e51;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  position: static;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom: 5px;
+  clear: both;
+  color: #4d4d4d;
+  text-align: left;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: #be8e51;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.head {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  width: 100%;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.90);
+}
+.main-navigation {
+  max-width: 850px;
+  float: right;
+  clear: both;
+}
+.navbar {
+  display: inline-block;
+  float: right;
+  background-color: transparent;
+}
+.logo {
+  width: 150px;
+  height: 135px;
+  background-image: url('../images/logobelmar.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.nav-item {
+  padding: 10px 9px;
+  -webkit-transition: background-color 648ms ease-in;
+  -o-transition: background-color 648ms ease-in;
+  transition: background-color 648ms ease-in;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #be8e51;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.nav-item:hover {
+  background-color: #be8e51;
+  color: white;
+}
+.secondary-nav {
+  display: inline-block;
+  margin-right: 0px;
+  padding-left: 0px;
+  float: right;
+  clear: right;
+}
+.sec-nav-item {
+  display: inline-block;
+  padding: 8px 11px 3px;
+  float: right;
+  color: transparent;
+  font-size: 14px;
+  list-style-type: none;
+}
+.sec-nav-item:hover {
+  background-color: transparent;
+  color: white;
+}
+.sec-nav-link {
+  -webkit-transition: color 685ms ease-in;
+  -o-transition: color 685ms ease-in;
+  transition: color 685ms ease-in;
+  color: #be8e51;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sec-nav-link:hover {
+  color: #197eb9;
+}
+.social {
+  width: 35%;
+  margin-right: 0px;
+  padding-top: 10px;
+  float: right;
+  clear: none;
+}
+.social-item {
+  display: inline-block;
+  padding: 3px 3px 15px;
+  float: right;
+}
+.social-link {
+  color: #be8e51;
+  text-decoration: none;
+}
+.slider-home-container {
+  margin-top: 148px;
+}
+.slider {
+  height: 500px;
+  background-color: transparent;
+}
+.arrow {
+  color: #197eb9;
+}
+.dots {
+  background-color: transparent;
+  color: #197eb9;
+}
+.home_heading {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #be8e51;
+  font-size: 28px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.home-main-text {
+  text-align: center;
+}
+.news-home-title {
+  margin-top: 40px;
+  border-bottom: 2px solid #be8e51;
+  color: #be8e51;
+}
+.news-container {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+  border-bottom: 2px solid #be8e51;
+}
+.news-container:hover {
+  background-color: transparent;
+}
+.news-container-title {
+  position: relative;
+  z-index: 5;
+  padding: 5px;
+  background-color: rgba(190, 142, 81, 0.85);
+  color: white;
+  font-weight: 400;
+}
+.news-container-image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 96%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news-container-parragraph {
+  padding-top: 101px;
+  text-align: justify;
+}
+.news-container-link {
+  position: static;
+  display: inline-block;
+  width: 100%;
+  float: none;
+  background-color: #be8e51;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.link {
+  float: none;
+  -webkit-transition: color 500ms ease-in;
+  -o-transition: color 500ms ease-in;
+  transition: color 500ms ease-in;
+  color: #197eb9;
+  font-weight: 700;
+  text-decoration: none;
+}
+.link:hover {
+  color: #103a52;
+}
+.link.blog-list-link {
+  float: right;
+}
+.footer {
+  margin-top: 20px;
+  padding: 0px 0px 20px;
+  background-color: #be8e51;
+  text-align: center;
+}
+.footer.no-margin {
+  margin-top: 0px;
+}
+.footer-info {
+  color: white;
+  text-align: center;
+}
+.slider-img {
+  width: 100%;
+  height: auto;
+}
+.social-foot {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.social-item-foot {
+  display: inline-block;
+  padding: 7px;
+}
+.circle {
+  padding: 0px;
+  border-radius: 50px;
+  background-color: #197eb9;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.slider-title {
+  position: absolute;
+  left: 0px;
+  top: 38%;
+  right: 0px;
+  z-index: 5;
+  color: #be8e51;
+  font-size: 53px;
+}
+.slogan {
+  color: #197eb9;
+  font-style: italic;
+  font-weight: 400;
+}
+.slogan-sub {
+  position: absolute;
+  left: 0px;
+  top: 47%;
+  right: 0px;
+  z-index: 5;
+  color: #197eb9;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.primary-container {
+  margin-top: 185px;
+}
+.primary-container.map {
+  position: relative;
+  min-height: 750px;
+  margin-top: 145px;
+  margin-bottom: 0px;
+  clear: both;
+}
+.artist-list {
+  display: block;
+  margin-bottom: 40px;
+  padding-left: 0px;
+}
+.artist-container {
+  position: static;
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  margin-left: 0px;
+  padding-left: 0px;
+  float: none;
+}
+.artist-container.artist-one {
+  background-image: url('../images/artist-one.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.artist-name {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 50px 32px 15px;
+  background-color: rgba(25, 126, 185, 0);
+  -webkit-transition: opacity 995ms ease-in;
+  -o-transition: opacity 995ms ease-in;
+  transition: opacity 995ms ease-in;
+  color: transparent;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.artist-name:hover {
+  display: block;
+  background-color: rgba(25, 126, 185, 0.86);
+  color: white;
+}
+.ceter-parragraph {
+  padding-right: 75px;
+  padding-left: 75px;
+  text-align: center;
+}
+.container {
+  height: 1000px;
+}
+.container.map {
+  height: 900px;
+}
+.contact-info {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  z-index: 1000;
+  width: 30%;
+  padding: 19px;
+  background-color: rgba(255, 255, 255, 0.86);
+}
+.contact-info-title {
+  color: #be8e51;
+  text-align: center;
+}
+.contact-info-parragraph {
+  color: #be8e51;
+  font-size: 19px;
+  text-align: center;
+}
+.blog-listing {
+  display: block;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.blog-item {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: white;
+  -webkit-transition: background-color 1000ms ease-in, border 1500ms ease-in;
+  -o-transition: background-color 1000ms ease-in, border 1500ms ease-in;
+  transition: background-color 1000ms ease-in, border 1500ms ease-in;
+}
+.blog-item:hover {
+  border-bottom: 2px solid #be8e51;
+  background-color: #fcfcfc;
+}
+.blog-list-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #be8e51;
+  font-size: 20px;
+}
+.blog-date {
+  font-size: 12px;
+  font-weight: 400;
+}
+.blog-list-img {
+  display: block;
+  margin-right: 15px;
+  float: left;
+  clear: none;
+  direction: ltr;
+}
+.blog-list-parragraph {
+  float: none;
+  clear: none;
+}
+.categories {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.reservation-engine {
+  position: fixed;
+  top: 110px;
+  right: 0px;
+  bottom: auto;
+  z-index: 10;
+  width: 230px;
+  height: auto;
+  min-height: 30px;
+  padding: 4px 11px;
+  background-color: #4d4d4d;
+  box-shadow: #4d4d4d 2px 2px 3px 0px;
+}
+.reservation-engine.shadow {
+  box-shadow: #4d4d4d 2px 2px 3px 0px, #4d4d4d 0px 0px 21px 0px;
+}
+.reservation-lin {
+  color: #be8e51;
+  text-decoration: none;
+}
+.label {
+  color: #be8e51;
+}
+.shadow {
+  box-shadow: #4d4d4d 1px 1px 13px 0px;
+}
+@media (max-width: 991px) {
+  .head {
+    position: fixed;
+    width: auto;
+    margin-top: 0px;
+    padding: 8px;
+  }
+  .logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 65px;
+    float: left;
+    background-image: url('../images/logobelmar_small.png');
+  }
+  .nav-item {
+    color: white;
+  }
+  .secondary-nav {
+    position: static;
+    display: none;
+    width: auto;
+    float: none;
+    clear: none;
+  }
+  .sec-nav-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: right;
+  }
+  .social {
+    display: none;
+    width: 45%;
+    clear: none;
+  }
+  .social-item {
+    padding-bottom: 3px;
+  }
+  .menu-mobile-devices {
+    position: static;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    min-width: 250px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    float: left;
+    clear: right;
+    border-left-style: solid;
+    border-left-width: 5px;
+    background-color: #197eb9;
+  }
+  .menu-mobile-devices.w--open {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 18px;
+  }
+  .menu-icon {
+    float: right;
+    color: #197eb9;
+  }
+  .menu-icon:active {
+    color: white;
+  }
+  .sidemenu {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+  }
+  .sidemenu.w--open {
+    right: auto;
+  }
+  .menu-icon-pressed {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: auto;
+    padding: 10px;
+    float: right;
+    clear: both;
+  }
+  .menu-icon-pressed.w--open {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    float: none;
+    background-color: #197eb9;
+    color: white;
+  }
+  .slider-home-container {
+    margin-top: 60px;
+  }
+  .slider {
+    height: 306px;
+  }
+  .news-container {
+    width: 25%;
+  }
+  .news-container-parragraph {
+    padding-top: 66px;
+  }
+  .slider-title {
+    top: 32%;
+  }
+  .primary-container {
+    margin-top: 85px;
+  }
+  .contact-info {
+    top: 10%;
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    position: relative;
+    height: 230px;
+  }
+  .news-container {
+    width: 50%;
+  }
+  .news-container-parragraph {
+    position: relative;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-top: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.77);
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-indent: 0px;
+  }
+  .news-container-link {
+    position: relative;
+  }
+  .slider-img {
+    height: auto;
+  }
+  .slider-title {
+    top: 26%;
+  }
+  .contact-info {
+    top: 10%;
+    width: 45%;
+  }
+  .mobile-margin {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 479px) {
+  .secondary-nav {
+    display: none;
+    width: 38%;
+    float: none;
+    clear: none;
+    font-size: 14px;
+  }
+  .sec-nav-link {
+    font-size: 10px;
+  }
+  .slider {
+    position: relative;
+    height: 131px;
+  }
+  .arrow {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    height: 230px;
+    float: right;
+    clear: none;
+  }
+  .home_heading {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+  }
+  .news-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .news-container-image {
+    display: block;
+    width: 97%;
+    height: 169px;
+  }
+  .news-container-parragraph {
+    display: block;
+  }
+  .slider-title {
+    top: 6%;
+    font-size: 26px;
+  }
+  .slogan-sub {
+    top: 27%;
+    font-size: 17px;
+  }
+  .contact-info {
+    top: 10%;
+    display: block;
+    width: 89%;
+  }
+  .mobile-margin {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
